@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+a:visited{
+    color:#fff;
+}
+body{ 
+    font-family:'inter', sans-serif;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.navbar { 
+    background-color:rgb(35, 65, 76,0.75);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+.logo-main, .logo-sub { 
+    display: block;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 32px;
+    line-height: 1.2;
+}
+.logo-main {
+    font-weight: bold;
+}
+.logo-main .yellow {
+    color: yellow;
+}
+.logo-sub .yellow {
+    color: yellow;
+}
+.logo-sub {
+    font-size: 6px;
+    font-weight: normal;
+}
+.menu {
+    display: flex;
+    gap: 40px;
+    font-size: 18px;
+    justify-content: center;
+    flex: 1;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+.menu-item {
+    color: white;
+    text-decoration: none;
+}
+.menu-item:hover {
+    text-decoration: underline;
+}
+.telegram-button {
+    background-color: #0088cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 1000px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.telegram-button:hover {
+    background-color: #0077b3;
+}
+.navbar-left { 
+    min-width: 170px;}
+
+.navbar-right {
+   min-width: 140px;
+   text-align: right;
+}
+
+
+
+h1, h2 {
+    margin: 5px ;
+    padding: 0px;
+    color: #23414C;
+    line-height: 1.6;
+    align-items: justify;
+}
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 43px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.site {
+    color: #23414C;
+    text-decoration: underline;
+}
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+strong {
+ margin-left: 5px;   
+}
+p{
+    font-family: 'Inter', sans-serif;
+    margin-left: 5px;
+    font-size: 18px;
+    align-items: justify;
+    margin-bottom: 20px;
+}
+li {
+    margin-left: 5px;
+    align-items: justify;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+footer {
+    background-color: #23414C;
+    color: #eee;
+    padding-top: 20px;
+    font-family: 'arial', sans-serif;
+    width: 100%;
+    margin: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.footer-section,
+.footer-middle,
+.footer-cookie {
+    flex: 1 1 0;
+}
+.footer-cookie {
+    text-align: right;
+}
+.footer-section a,
+.footer-middle a,
+.footer-cookie a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 15px;
+}
+.footer-section a:hover,
+.footer-middle a:hover,
+.footer-cookie a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.logo1 {
+    font-size: 32px; 
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.footer-section a.logo1 {
+    font-size: 36px; 
+    text-decoration: none;
+}
+.sub-logo {
+    font-size: 7px;
+    font-weight: normal;
+    color: white;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+.yellow {
+    color: yellow;
+}
+.footer-divider {
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.3;
+    margin: 20px auto 10px auto;
+    
+}
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    padding-bottom: 10px;
+}
+.footer-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+.telegramb {
+    display: inline-block;
+    background-color: #0088cc;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 28px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+.telegramb:hover {
+    background-color: #0077b3;
+}
+.footer-list li {
+    margin-bottom: 15px;
+    margin-left: 180px;
+}
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
