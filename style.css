@@ -154,7 +154,7 @@ mask: linear-gradient(#fff 0%, #fff 100%);
 }
 .hero-image {
     flex: 1;
-    background-image: url(/HeroSectionImages.png);
+    background-image: url(./HeroSectionImages.png);
     background-size: cover;
     background-position: center;
     width: 50vw;
