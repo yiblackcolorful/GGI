@@ -27,6 +27,7 @@
           </div>
         </div>
       </div>
+      <button class="burger">&#9776;</button>
         <div class="menu">
         <a href="https://t.me/ggicryptoforex" class="menu-item">Трейд Идеи</a>
         <a href="https://t.me/ggicryptoforex" class="menu-item">Crypto</a>
@@ -37,6 +38,12 @@
           <a href="https://t.me/ggicryptoforex" target="_blank" class="telegram-button">Telegram</a>
 
         </div>
+        <script>
+document.querySelector('.burger').addEventListener('click', function() {
+    document.querySelector('.menu').classList.toggle('active');
+});
+</script>
+
     </nav>
     </header>
     
