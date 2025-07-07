@@ -88,6 +88,26 @@ body{
    min-width: 140px;
    text-align: right;
 }
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+    .telegram-button{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
 
 .hero {
     display: flex;
@@ -190,6 +210,23 @@ mask: linear-gradient(#fff 0%, #fff 100%);
     padding: 30px;
 }
 }
+@media (max-width: 600px) {
+    .hero-title {
+        font-size: 24px;
+    }
+    .hero-content p {
+        font-size: 14px;
+    }
+    .hero-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+
+
+
+
 .benefits {
     text-align: center;
     padding: 80px 40px;
@@ -268,6 +305,24 @@ mask: linear-gradient(#fff 0%, #fff 100%);
     border-radius: 1000px;
     margin:0 auto 0 auto;
 }
+@media (max-width: 600px) {
+    .benefit-cards {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .card {
+        width: 100%;
+        max-width: 90%;
+    }
+    .benefits h2 {
+        font-size: 36px;
+    }
+}
+
+
+
+
 .rezultate {
     background-color: #425863;
     padding-top: 20px;
@@ -420,7 +475,18 @@ img[class^="img"] {
   -webkit-background-clip: text;
   background-clip: text;
 }
-
+@media (max-width:600px) {
+    .rezultate h2 {
+        font-size: 60px;
+    }
+    .gradient-text2 {
+        font-size: 50px;
+        margin-top: -20px;
+    }
+    .img1, .img2, .img3, .img4, .img5, .telefon-diagonal, .text-sub {
+    display: none;
+    }
+}
 
 
 
@@ -522,181 +588,29 @@ html,body {
     margin: 0;
     padding: 0;
 }
-
-* {
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box;
-}
-body{ 
-    font-family:'inter', sans-serif;
-}
-.navbar { 
-    background-color:rgb(35, 65, 76,0.75);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 40px;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-}
-.logo-main, .logo-sub { 
-    display: block;
-}
-.logo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 32px;
-    line-height: 1.2;
-}
-.logo-main {
-    font-weight: bold;
-}
-.logo-main .yellow {
-    color: yellow;
-}
-.logo-sub .yellow {
-    color: yellow;
-}
-.logo-sub {
-    font-size: 6px;
-    font-weight: normal;
-}
-.menu {
-    display: flex;
-    gap: 40px;
-    font-size: 18px;
-    justify-content: center;
-    flex: 1;
-    white-space: nowrap;
-    flex-wrap: nowrap;
-}
-.menu-item {
-    color: white;
-    text-decoration: none;
-}
-.menu-item:hover {
-    text-decoration: underline;
-}
-.telegram-button {
-    background-color: #0088cc;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    font-size: 18px;
-    border-radius: 1000px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-}
-.telegram-button:hover {
-    background-color: #0077b3;
-}
-.navbar-left { 
-    min-width: 170px;}
-
-.navbar-right {
-   min-width: 140px;
-   text-align: right;
-}
-
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #1C212A;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    color: white;
-    box-sizing: border-box;
-    gap: 150px;
-}
-.hero-content {
-    background-color: #425863;
-    padding: 60px;
-    border-radius: 50px;
-    width: 50vw;
-    max-width: 600px;
-    position: relative;
-    z-index: 1;
-    color: white;
-    overflow: hidden;
-}
-.hero-content::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    padding: linear-gradient(to right, #000000, #666666);
-    -webkit-mask: 
-    linear-gradient(#fff, 0 0) content-box,
-    linear-gradient(#fff, 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    border-radius: 30px;
-    z-index: -1;
-}
-.hero-title {
-    font-size: 30px;
-    margin-bottom: 20px;
-    font-weight: bold;
-    line-height: 1.2;
-    max-width: 500px;
-    word-break: break-word;
-}
-.title-item{
-    color: #0088cc;
-}
-.hero-content p {
-    font-size: 12px;
-    margin-bottom: 30px;
-}
-.hero-button {
-    background-color: #0088cc;
-    color: white;
-    font-size: 18px;
-    padding: 12px 30px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.3s;
-}
-.hero-button:hover {
-    background-color: #0077b3;
-}
-.hero-image {
-    flex: 1;
-    background-image: url(/HeroSectionImages.png);
-    background-size: cover;
-    background-position: center;
-    width: 50vw;
-    height: 100vh;
-    margin-left: 0;
-    opacity: 1;
-    mix-blend-mode: screen;
-    filter: drop-shadow(100px, 100px, 30px, rgba(35, 65, 76, 1));
-}
-/* Responsive Styles */
-@media (max-width: 900px) {
-    .hero{
+@media (max-width: 600px) {
+    .footer-container {
         flex-direction: column;
-        padding: 20px 40px;
-        height: auto;
-        gap: 30px;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
     }
-.hero-image {
-    margin-left: 0;
-    margin-top: 30px;
-    width: 100%;
-    height: 300px;
+
+    .footer-section a, .footer-middle a, .footer-cookie a {
+        font-size: 16px;
+    }
+
+    .footer-list li {
+        margin-left: 0;
+    }
+
+    .telegramb {
+        width: 100%;
+        text-align: center;
+    }
 }
-.hero-content {
-    width: 100%;
-    text-align: center;
-    padding: 30px;
-}
+@media (max-width: 600px) {
+    body {
+        padding: 0 10px;
+    }
 }
